@@ -1,0 +1,15 @@
+﻿Variable name,Definition,Values
+activity,Type of activity,1=walking; 2=descending stairs; 3=ascending stairs; 4=driving; 77=clapping; 99=non-study activity
+time_s,Time in seconds from device initiation,Measured in hundredths of seconds
+lw_x,Left wrist x-axis,Acceleration measured with respect to Earth's gravity (g = 9.81 meters per squared second)
+lw_y,Left wrist y-axis,Acceleration measured with respect to Earth's gravity (g = 9.81 meters per squared second)
+lw_z,Left wrist z-axis,Acceleration measured with respect to Earth's gravity (g = 9.81 meters per squared second)
+lh_x,Left hip x-axis,Acceleration measured with respect to Earth's gravity (g = 9.81 meters per squared second)
+lh_y,Left hip y-axis,Acceleration measured with respect to Earth's gravity (g = 9.81 meters per squared second)
+lh_z,Left hip z-axis,Acceleration measured with respect to Earth's gravity (g = 9.81 meters per squared second)
+la_x,Left ankle x-axis,Acceleration measured with respect to Earth's gravity (g = 9.81 meters per squared second)
+la_y,Left ankle y-axis,Acceleration measured with respect to Earth's gravity (g = 9.81 meters per squared second)
+la_z,Left ankle z-axis,Acceleration measured with respect to Earth's gravity (g = 9.81 meters per squared second)
+ra_x,Right ankle x-axis,Acceleration measured with respect to Earth's gravity (g = 9.81 meters per squared second)
+ra_y,Right ankle y-axis,Acceleration measured with respect to Earth's gravity (g = 9.81 meters per squared second)
+ra_z,Right ankle z-axis,Acceleration measured with respect to Earth's gravity (g = 9.81 meters per squared second)
