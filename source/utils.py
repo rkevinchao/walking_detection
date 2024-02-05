@@ -26,6 +26,8 @@ def load_single_data(all_files, file_id):
 def plot_zoomin(file_id, df, activity, device_location, t0=None, t1=None):
     '''
     Function to plot a zoom-in acc records
+    t0_index: the first index of data point in an dataframe
+    t1_index: the last index of data point in an dataframe
     '''
 
     def appl_mask(x, y):
@@ -92,7 +94,7 @@ def plot_zoomin(file_id, df, activity, device_location, t0=None, t1=None):
     plt.xlabel('Seconds')
     plt.ylabel('m/s^2')
     plt.legend()
-    if t0 and t1:
+    if (t0 is not None) and (t1 is not None):
         plt.xlim(t0, t1)
     file_id = file_id.split('/')[-1]
     plt.title('File='+file_id+' / Activity='+activity_type+' / Device Location='+loc)
