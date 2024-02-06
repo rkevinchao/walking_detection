@@ -23,7 +23,39 @@ def load_single_data(all_files, file_id):
     df = pd.read_csv(file_id)      # Load CSV into a DataFrame
     return file_id, df
 
-def plot_zoomin(file_id, df, activity, device_location, t0=None, t1=None):
+def get_activity_type(activity):
+    # Check activity type
+    if activity==1:
+        activity_type = "Walking"
+    elif activity==2:
+        activity_type = "Descending Stairs"
+    elif activity==3:
+        activity_type = "Ascending Stairs"
+    elif activity==4:
+        activity_type = "Driving"
+    elif activity==77:
+        activity_type = "Clapping"
+    elif activity==99:
+        activity_type = "Non-study Activity"
+    return activity_type
+
+def get_device_location(location_id):
+    # Check device location
+    if location_id=='lw':
+        device_location = "Left Wrist"    
+    elif location_id=='rw':
+        device_location = "Right Wrist" 
+    elif location_id=='lh':
+        device_location = "Left Hip"
+    elif location_id=='rh':
+        device_location = "Right Hip"        
+    elif location_id=='la':
+        device_location = "Left Ankle"
+    elif location_id=='ra':
+        device_location = "Right Ankle"
+    return device_location
+
+def plot_zoomin(file_id, df, activity, location_id, t0=None, t1=None):
     '''
     Function to plot a zoom-in acc records
     t0_index: the first index of data point in an dataframe
@@ -43,37 +75,15 @@ def plot_zoomin(file_id, df, activity, device_location, t0=None, t1=None):
     df2 = df[df.activity==activity]  # Select data for a certain Activity
     
     # Define device location
-    loc_x = device_location+'_x'
-    loc_y = device_location+'_y'
-    loc_z = device_location+'_z'
+    loc_x = location_id+'_x'
+    loc_y = location_id+'_y'
+    loc_z = location_id+'_z'
     
-    # Check activity type
-    if activity==1:
-        activity_type = "Walking"
-    elif activity==2:
-        activity_type = "Descending Stairs"
-    elif activity==3:
-        activity_type = "Ascending Stairs"
-    elif activity==4:
-        activity_type = "Driving"
-    elif activity==77:
-        activity_type = "Clapping"
-    elif activity==99:
-        activity_type = "Non-study Activity"
+    # Get activity type
+    activity_type = get_activity_type(activity)
         
-    # Check device location
-    if device_location=='lw':
-        loc = "Left Wrist"    
-    elif device_location=='rw':
-        loc = "Right Wrist" 
-    elif device_location=='lh':
-        loc = "Left Hip"
-    elif device_location=='rh':
-        loc = "Right Hip"        
-    elif device_location=='la':
-        loc = "Left Ankle"
-    elif device_location=='ra':
-        loc = "Right Ankle"
+    # Get device location
+    device_location = get_device_location(location_id)
         
     # Plot zoom-in Acc data
     x = df2.time_s
@@ -92,11 +102,11 @@ def plot_zoomin(file_id, df, activity, device_location, t0=None, t1=None):
     plt.plot(masked_x, masked_y, label=loc_z)
     
     plt.xlabel('Seconds')
-    plt.ylabel('m/s^2')
+    plt.ylabel('g')
     plt.legend()
     if (t0 is not None) and (t1 is not None):
         plt.xlim(t0, t1)
     file_id = file_id.split('/')[-1]
-    plt.title('File='+file_id+' / Activity='+activity_type+' / Device Location='+loc)
+    plt.title('File='+file_id+' / Activity='+activity_type+' / Device Location='+device_location)
 
 
