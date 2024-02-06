@@ -8,17 +8,33 @@
 	* The whole process aims to be simple and easy to understand the end-to-end pipeline of Data Science project.    
 
 * Data:
-	* the raw accelerometer data was download from: 
-	* https://physionet.org/content/accelerometry-walk-climb-drive/1.0.0/
+	* The raw accelerometer data was download from: 
+		* https://physionet.org/content/accelerometry-walk-climb-drive/1.0.0/
 	* The sampling rate of the Acc data is 100 Hz 
-	* Data including labeled activities of walking, stair climbing, and driving. 
+	* Data including labeled activities of walking, stair climbing, and driving.
+	* Types of activities:
+		* 1=walking; 
+		* 2=descending stairs; 
+		* 3=ascending stairs; 
+		* 4=driving; 
+		* 77=clapping; 
+		* 99=non-study activity
+	* Device positions:
+		* lw: left wrist
+		* rw: right wrist
+		* lh: left hip
+		* rg: right hip
+		* la: left ankle
+		* ra: right ankle
 	* The unit of accelerometer is in g (9.8 m/s^2)
 
 * Source:
-	* 01_data_understanding.ipynb
-		* Jupyter notebook to show how to understand the raw accelerometer data and conduct simple quality control.
-	* 02_data_preparation.ipynb
-		* Show basic signal process steps to analize high-friquency accelerometer data. 
+	* 01\_data\_understanding.ipynb
+		* Jupyter notebook to show how to understand the raw accelerometer data, conduct simple quality control, and show data visualization.
+	* 02\_data\_preparation\_time\_series\_analysis.ipynb
+		* Show basic signal process steps to analize high-friquency  accelerometer data. 
+		* Show algorithm to compute Step Count in both time and frequency domains
+	* 03\_data\_preparation\_features\_creation.ipynb
 		* Show how to create a dataframe with various features
-	* 03_modeling_evaluation.ipynb
+	* 04\_modeling\_evaluation.ipynb
 		* Run Scikit-learn models and evaluate the model. 	
