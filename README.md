@@ -13,19 +13,19 @@
 	* The sampling rate of the Acc data is 100 Hz 
 	* Data including labeled activities of walking, stair climbing, and driving.
 	* Types of activities:
-		* 1=walking; 
-		* 2=descending stairs; 
-		* 3=ascending stairs; 
-		* 4=driving; 
-		* 77=clapping; 
-		* 99=non-study activity
+		* 1=walking (Walking) 
+		* 2=descending stairs (DescStairs)
+		* 3=ascending stairs (AscendStairs)
+		* 4=driving (Driving)
+		* 77=clapping (Clapping)
+		* 99=non-study activity (NonStudyAct)
 	* Device positions:
-		* lw: left wrist
-		* rw: right wrist
-		* lh: left hip
-		* rg: right hip
-		* la: left ankle
-		* ra: right ankle
+		* lw: left wrist (WristL)
+		* rw: right wrist (WristR)
+		* lh: left hip (HipL)
+		* rg: right hip (HipR)
+		* la: left ankle (AnkleL)
+		* ra: right ankle (AnkleR)
 	* The unit of accelerometer is in g (9.8 m/s^2)
 
 * Source:
