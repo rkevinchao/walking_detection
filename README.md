@@ -37,4 +37,10 @@
 	* 03\_data\_preparation\_features\_creation.ipynb
 		* Show how to create a dataframe with various features
 	* 04\_modeling\_evaluation.ipynb
-		* Run Scikit-learn models and evaluate the model. 	
+		* Run Scikit-learn models and evaluate the model. 
+* Outputs:
+	* Format of acc file:
+		* **Columns:** 'subject\_id', 'device\_loc', 'act\_id', 'act\_name', 'event\_num', 'walk\_or\_not', 'unique\_id', 'time', 'acc\_x', 'acc\_y', 'acc\_z' 
+		*  **Row:** idf1ce9a0f,	AnkleL,	1,	Walking,	1,	1,	idf1ce9a0f\_AnkleL\_1\_Walking\_1\_1,	354.05,	-0.070,	-0.973,	0.078
+		*  .....
+		*  **Row:** idf1ce9a0f,	AnkleL,	99,	NonStudyAct,	547,	0,	idf1ce9a0f\_AnkleL\_99\_NonStudyAct\_547\_0,	3282.01,	-0.059,	0.043,	0.992
