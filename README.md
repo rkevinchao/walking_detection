@@ -1,7 +1,7 @@
 # walking-detection
 * This is a project to demonstrate how to create "walking detection" models with various approaches. 
 	* By Kevin Chao (kevinchao@gmail.com)
-	* Latest updated on 2024-02-03
+	* Latest updated on 2024-02-05
 
 * Purpose:
 	* The purpose of this project is to demonstrate how to create Machine Learning Models from raw accelerometer dataset. I use Walking Detection as an example.
@@ -12,6 +12,7 @@
 	* https://physionet.org/content/accelerometry-walk-climb-drive/1.0.0/
 	* The sampling rate of the Acc data is 100 Hz 
 	* Data including labeled activities of walking, stair climbing, and driving. 
+	* The unit of accelerometer is in g (9.8 m/s^2)
 
 * Source:
 	* 01_data_understanding.ipynb
