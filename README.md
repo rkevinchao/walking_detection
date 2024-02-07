@@ -36,6 +36,8 @@
 		* Show algorithm to compute Step Count in both time and frequency domains
 	* 03\_data\_preparation\_features\_creation.ipynb
 		* Show how to create a dataframe with various features
+	* 03b\_data\_preparation\_features\_creation\_all\_subjects.ipynb
+		* Run all subjects' feature files
 	* 04\_modeling\_evaluation.ipynb
 		* Run Scikit-learn models and evaluate the model. 
 * Outputs:
@@ -44,3 +46,5 @@
 		*  **Row:** idf1ce9a0f,	AnkleL,	1,	Walking,	1,	1,	idf1ce9a0f\_AnkleL\_1\_Walking\_1\_1,	354.05,	-0.070,	-0.973,	0.078
 		*  .....
 		*  **Row:** idf1ce9a0f,	AnkleL,	99,	NonStudyAct,	547,	0,	idf1ce9a0f\_AnkleL\_99\_NonStudyAct\_547\_0,	3282.01,	-0.059,	0.043,	0.992
+	*  ML modeling results will be placed under: 
+		* ~/outputs/xxML_outputs/
