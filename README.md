@@ -1,7 +1,7 @@
 # walking-detection
 * This is a project to demonstrate how to create "walking detection" models with various approaches. 
 	* By Kevin Chao (kevinchao@gmail.com)
-	* Latest updated on 2024-02-05
+	* Latest updated on 2024-02-08
 
 * Purpose:
 	* The purpose of this project is to demonstrate how to create Machine Learning Models from raw accelerometer dataset. I use Walking Detection as an example.
