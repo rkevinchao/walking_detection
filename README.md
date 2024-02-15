@@ -41,6 +41,9 @@
 		* Run all subjects' feature files
 	* 04\_modeling\_evaluation.ipynb
 		* Run Scikit-learn models and evaluate the model. 
+	* 04b\_modeling\_with\_Spark.ipynb
+	* 04c\_modeling\_with\_PyTorch.ipynb
+	* 04d\_modeling\_with\_TensorFlow.ipynb
 * Outputs:
 	* Format of acc file:
 		* **Columns:** 'subject\_id', 'device\_loc', 'act\_id', 'act\_name', 'event\_num', 'walk\_or\_not', 'unique\_id', 'time', 'acc\_x', 'acc\_y', 'acc\_z' 
