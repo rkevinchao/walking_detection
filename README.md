@@ -52,3 +52,5 @@
 		*  **Row:** idf1ce9a0f,	AnkleL,	99,	NonStudyAct,	547,	0,	idf1ce9a0f\_AnkleL\_99\_NonStudyAct\_547\_0,	3282.01,	-0.059,	0.043,	0.992
 	*  ML modeling results will be placed under: 
 		* ~/outputs/xxML_outputs/
+
+* Additions:	
